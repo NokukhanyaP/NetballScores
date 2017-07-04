@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#008000"
+    tools:context="com.example.nokukhanya.netballscores.MainActivity">
+    <LinearLayout
+        android:id="@+id/Top_Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="190dp"
+            android:src="@drawable/sharni" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Top_Image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="NETBALL SCORES"
+           android:textAlignment="center"
+           android:textSize="28dp"
+           android:fontFamily="cursive"
+           android:textColor="#EEE8AA"
+          android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+      android:layout_below="@id/Top_Image"
+        android:orientation="horizontal"
+        android:id="@+id/TeamA_TeanB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEAM A"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="TEAM B"
+            android:textSize="20sp"
+           android:layout_marginLeft="190dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/Vs_Tex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TeamA_TeanB"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Vs_texlinear"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="vs"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Tex_Score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Vs_Tex"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtTeamA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp"
+            android:layout_marginLeft="100dp"/>
+        <TextView
+            android:id="@+id/txtTeamB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp"
+            android:layout_marginLeft="150dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/Left_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Tex_Score"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btnteamA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD goals"
+            android:background="#EEE8AA "
+            android:layout_above="@+id/btnclear"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/btnTeamB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#EEE8AA"
+            android:text="add goals"
+            android:layout_marginLeft="166dp"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+      android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Left_btn"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_marginLeft="80dp"
+            android:id="@+id/btnminusA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-goals"
+            android:background="#EEE8AA"/>
+
+        <Button
+            android:id="@+id/btnminusB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="#EEE8AA"
+            android:text="-goals"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnclear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        android:background="#EEE8AA"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+</RelativeLayout>
